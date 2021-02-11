@@ -704,7 +704,7 @@ setTimeout(() => { // load all db's into memory
         break;
       }
       default: {
-	if (msg.startsWith("/sendasbot")) {
+	if (msg.startsWith("/sendasbot") && sender == "YodaLightsabr") {
 	  io.to(room).emit('botMessage', msg.substring(10));
 	  return;
 	  break;
